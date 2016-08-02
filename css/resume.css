@@ -1,0 +1,268 @@
+
+.resume {
+    margin-top: 32px;
+    margin-bottom: 36px;
+    width: 1000px;
+}
+
+.head {
+    height: 160px;
+    color: #ffffff;
+    background-color:#908e82;
+    box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.32)
+}
+
+.name {
+    margin-left: 8%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 24px;
+    font-size: 72px;
+    font-family: 'Kaiti SC';
+}
+
+.position {
+    margin-left: 9.5%;
+    font-size: 21px;
+    font-family: 'Weibei SC'
+}
+
+.abstract {
+    height: 80px;
+    background-color:#d9d8d3;
+    margin-top: 8px;
+}
+
+.abstract-detail {
+    margin-left: 9.5%;
+    margin-right: 8%;
+    margin-top: 20px;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #3a454b
+}
+
+.card-left {
+    background-color:#f5f5f5;
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.item-left {
+    margin-top: 40px;
+    margin-left: 22%;
+}
+
+.label {
+    display: inline-flex;
+    margin-left: -30px;
+    margin-bottom: 14px
+}
+
+.label-svg {
+    margin-right: 2px
+}
+
+.title {
+    margin-top: 4px;
+    margin-left: 2px
+}
+
+.title-letter {
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.spacing {
+    margin-top: 8px;
+}
+
+.edu-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 56px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.edu-item_last {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 56px;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.edu-item_left {
+    font-weight: bold
+}
+
+.edu-item_right {
+    margin-left: 60px;
+    font-size: 16px
+}
+
+.lang-cet {
+    margin-right: 15%;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.lang-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 56px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.label-svg_small {
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.work-title {
+    margin-left: 8px;
+    margin-bottom: 2px
+}
+
+.work-title_letter {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.time {
+    margin-right: 56px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: 'Stencil Std';
+}
+
+.work-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 56px;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 14px
+}
+
+.work-spacing {
+    margin-top: 16px;
+}
+
+.work-label {
+    display: inline-flex;
+    margin-left: -30px;
+    margin-bottom: 0;
+    margin-right: 56px
+}
+
+.card-right {
+    background-color:#ebebeb;
+    width: 100%;
+    height: 100%;
+}
+
+.skill {
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 8%;
+}
+
+.skill-label {
+    display: inline-flex;
+    margin-top: 6px;
+}
+
+.skill-label_svg {
+    margin-left: -26px
+}
+
+.skill-title {
+    margin-top: 4px;
+    margin-left: 2px
+}
+
+.skill-title_letter {
+    font-weight: bold
+}
+
+.skill-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.exp {
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+.exp-label {
+    display: inline-flex;
+    margin-left: -30px;
+    margin-bottom: 20px
+}
+
+.exp-title {
+    margin-right: 10%;
+    margin-bottom: 0
+}
+
+.exp-a {
+    color: #908e82;
+    text-decoration: none;
+}
+
+.exp-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10%
+}
+
+.contact {
+    height: 120px;
+    background-color: #908e82
+}
+
+.contact-title {
+    margin-top: 40px;
+    margin-left: 9.5%;
+    margin-bottom: 6px;
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'Hannotate SC';
+}
+
+.contact-detail {
+    margin-top: 8px;
+    margin-left: 9.5%;color: #ffffff;
+    font-family: Palatino;
+}
+
+.tel {
+    font-size: 16px;
+}
+
+.tel-cell {
+    font-size: 16px;
+}
+
+.email {
+    font-size: 16px;
+    margin-left: 24px
+}
+
+.email-address {
+    font-size: 16px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="resumeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+
+    <script type="text/javascript" src="/node_modules/material-design-lite/material.js"></script>
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/controllers.js"></script>
+    <script type="text/javascript" src="/js/directives.js"></script>
+
+    <link rel="stylesheet" href="/node_modules/material-design-lite/material.css">
+    <link rel="stylesheet" href="/css/resume.css">
+</head>
+<body style="width: 1000px; margin-left: auto; margin-right: auto; background-color: #000000">
+<div ng-controller="ResumeCtrl" id="resume" style="background-color: #ffffff; width: 1000px; margin-right: auto; margin-left: auto;">
+<div class="mdl-card mdl-shadow--2dp resume">
+    <div>
+        <div  class="head">
+                <h1 class="name">{{name}}</h1>
+                <p class="position">{{position}}</p>
+        </div>
+    </div>
+    <div class="abstract">
+        <p class="abstract-detail">{{abstract}}</p>
+    </div>
+    <div class="mdl-grid mdl-grid--no-spacing" style="margin: 0">
+        <div class="mdl-cell mdl-cell--6-col" style="padding-right: 8px; width: 45%">
+            <div id="left" class="mdl-card card-left">
+                <div id="education" class="item-left">
+                    <div class="label" style="margin-bottom: 6px">
+                        <img class="label-svg" src="/img/ic_school_24px.svg">
+                        <div class="title">
+                            <span class="title-letter">教育经历</span>
+                        </div>
+                    </div>
+                    <div id="undergraduate" class="spacing" ng-repeat="edu in edus" left-width>
+                        <p class="edu-item"><span class="edu-item_left">时 间</span><span class="edu-item_right">{{edu.time}}</span></p>
+                        <p class="edu-item"><span class="edu-item_left">学 校</span><span class="edu-item_right">{{edu.school}}</span></p>
+                        <p class="edu-item"><span class="edu-item_left">专 业</span><span class="edu-item_right">{{edu.special}}</span></p>
+                    </div>
+                </div>
+                <div id="language" class="item-left">
+                    <div class="label">
+                        <img class="label-svg" src="/img/ic_language_24px.svg">
+                        <div class="title">
+                            <span class="title-letter">语言水平</span>
+                        </div>
+                    </div>
+                    <div id="cet-6">
+                        <p class="lang-cet">CET-6</p>
+                        <p class="lang-detail">{{cet6}}</p>
+                    </div>
+                </div>
+                <div id="work" class="item-left" style="margin-bottom: 16px">
+                    <div class="label">
+                        <img class="label-svg" src="/img/ic_work_24px.svg">
+                        <div class="title">
+                            <span class="title-letter">个人履历</span>
+                        </div>
+                    </div>
+                    <div class="spacing" ng-repeat="work in works">
+                        <div class="work-label">
+                            <img class="label-svg_small" src="/img/ic_label_24px.svg">
+                            <div class="work-title">
+                                <span class="work-title_letter">{{work.item}}</span>
+                            </div>
+                        </div>
+                        <p class="time">{{work.time}}</p>
+                        <ul class="work-detail"><li ng-repeat=" detail in work.detail ">{{detail}}</li></ul>
+                    </div>
+                </div>
+                <div id="left-margin"></div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col" style="width: 55%">
+            <div id="right" class="mdl-card card-right">
+                <div id="skill" class="skill">
+                    <div class="label">
+                        <img class="label-svg" src="/img/ic_build_24px.svg">
+                        <div class="title">
+                            <span class="title-letter">技能</span>
+                        </div>
+                    </div>
+                    <div id="font-end">
+                        <div ng-repeat="skill in skills" right-width>
+                            <div class="skill-label">
+                                <img class="skill-label_svg" src="/img/ic_code_24px.svg">
+                                <div class="title">
+                                    <span class="skill-title_letter">{{skill.item}}</span>
+                                </div>
+                            </div>
+                            <ul class="skill-detail"><li ng-repeat="detail in skill.detail">{{detail}}</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="experience" class="exp">
+                    <div class="exp-label">
+                        <img style="margin-left: 2px" src="/img/ic_explore_24px.svg">
+                        <div class="title">
+                            <span class="title-letter">个人项目实践</span>
+                        </div>
+                    </div>
+                    <div ng-repeat="exp in exps">
+                        <p class="exp-title"><a class="exp-a" ng-href="{{exp.link}}">{{exp.item}}</a></p>
+                        <p class="exp-detail">{{exp.detail}}</p>
+                    </div>
+                </div>
+                <div id="right-margin"></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+            <p class="contact-title">联系我</p>
+            <div class="contact-detail">
+                <span class="tel">Tel : </span><span class="tel-cell">{{contact.tel}}</span><span class="email">Email : </span><span class="email-address">{{contact.email}}</span>
+            </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

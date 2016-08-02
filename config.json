@@ -1,0 +1,51 @@
+{
+  "name":"张三",
+  "position":"前端工程师",
+  "abstract":"喜爱web开发，熟练掌握JavaScript、HTMl、CSS以及JavaScript框架来搭建web应用。了解原生JavaScript和JavaScript类库的使用。对前端框架、开发模式、架构有一定的见解，拥有较强的学习能力和团队合作能力，熟悉项目开发流程和团队协同工作。",
+  "edu":[{
+    "time":"2024 ~ 2027",
+    "school":"bilibili大学(硕士)",
+    "special":"漫画"
+  },{
+    "time":"2020 ~ 2024",
+    "school":"Acfun大学(本科)",
+    "special":"动画"
+  }],
+  "cet6":"能流畅阅读英文专业书籍、文档及其他资料,能够日常使用英文邮件,经常使用Google以及StackOverflow",
+  "work":[{
+    "item":"火星市模拟人生管理信息系统",
+    "time":"2024.8 ~ 2025.1",
+    "detail":["开发网页中上传并在线浏览文件的可视化widget","编写下载上传文件的后台功能","优化页面布局,编写用户操作手册"]
+  },{
+    "item":"参与专项基金:拯救未来人类",
+    "time":"2025.4 ~ 2026.3",
+    "detail":["优化基于LISP的CAD二次开发代码,便于读取DXF文件的语义与几何信息","使用CityGML建模标准,构建三维建筑模型","使用citygml4java、java编写部分CityGML模型生成算法"]
+  },{
+    "item":"半人马星座移民业务审批系统",
+    "time":"2026.4 ~ 2026.6",
+    "detail":["前端架构设计","阅读工作流实现机制原理","团队合作,制定工作计划,分配任务,保证工作进度"]
+  }],
+  "skill":[{
+    "item":"HTML/CSS",
+    "detail":["掌握语义化的 HTML，模块化的 CSS，实现较复杂的布局","熟悉已标准化的 HTML5 / CSS3 新特性，实验项目中能尝试使用未广泛实现的新标准"]
+  },{
+    "item":"JavaScript",
+    "detail":["掌握JavaScript及框架搭建响应式Web App","掌握JavaScript框架Angular.Js","了解JavaScript类库JQuery","了解JavaScript模块加载器RequireJS"]
+  },{
+    "item":"其它",
+    "detail":["熟悉前端MV*模型","了解基本的后台开发NodeJS","了解基本web相关技术: Socket.io、Express","使用项目管理和协同工具: Git","了解Oracle的使用","了解LISP语言"]
+  }],
+  "experiences":[{
+    "item":"Music Radio",
+    "link":"index.html",
+    "detail":"实践了 CRUD SPA 的 MusicRadio Web App,使用了HTML5、CSS3、Material Design Lite Css框架、Angular.js等技术,利用双队列解决了从后台获取高清无损音频文件时,等待时间过长的问题,还与后台协作利用关键字播放符合筛选条件的音频集合,提高了Web性能,成为日常PC端播放音乐平台。"
+  },{
+    "item":"3D SuperMap",
+    "link":"index.html",
+    "detail":"利用飞机公司提供的Web浏览三维模型类库,使用HTML5、CSS3、JavaScript、编写基于ActiveX的在IE11浏览SuperMap格式三维模型的地下管线查询系统的前端部分。其中可以漫游地下管线三维模型,查询三维模型相关的基本属性数据,并可以对地下管线做基本的数据测量与标注。"
+  }],
+  "contact":{
+    "tel":"12345678910",
+    "email":"xxxxx@xxxx.com"
+  }
+}
